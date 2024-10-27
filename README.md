@@ -1,6 +1,9 @@
 
+
 # Wanaonimichael-new
 dv lottery
+
+
 
 # Wanaoni Foundation
 
@@ -31,4 +34,6 @@ The Wanaoni Foundation website aims to assist individuals through the DV Lottery
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Wanaonimichael/username.github.io
- fce51c07b (Add initial files and submodule)
+
+
+
