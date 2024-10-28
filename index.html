@@ -1,70 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wanaoni Foundation</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://bot.dialogflow.com;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DV Lottery Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        main {
+            padding: 2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Wanaoni Foundation</h1>
-    <p>This is the homepage for Wanaoni Foundation's DV Lottery Application Services.</p>
-    
-    <h2>Contact Us</h2>
-    <p>Email: misikomichael@gmail.com</p>
-    <p>Phone: +254729931857</p>
-    <p>Address: 185 Chwele</p>
-
-    <h2>DV Lottery Application</h2>
-    <form action="/submit-application" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob"><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
-
-    <h2>About Us</h2>
-    <p>The Wanaoni Foundation is dedicated to assisting individuals in navigating the DV Lottery application process. We provide resources, guidance, and support to ensure that applicants have the best chance of success.</p>
-
-    <h2>Our Services</h2>
-    <ul>
-        <li>Guidance on the DV Lottery application process</li>
-        <li>Review and feedback on application documents</li>
-        <li>Updates on lottery results and next steps</li>
-        <li>Support with queries and concerns</li>
-    </ul>
-
-    <h2>FAQs</h2>
-    <h3>What is the DV Lottery?</h3>
-    <p>The DV Lottery, also known as the Diversity Immigrant Visa Program, is a U.S. government program that makes 55,000 permanent resident visas available annually to persons from countries with low rates of immigration to the United States.</p>
-
-    <h3>How do I apply for the DV Lottery?</h3>
-    <p>Applications for the DV Lottery must be submitted online through the official U.S. Department of State website during the application period. Our foundation offers guidance to help you complete your application correctly.</p>
-
-    <h3>What happens after I submit my application?</h3>
-    <p>After submitting your application, you will receive a confirmation number. Use this number to check the status of your application on the official DV Lottery website. If you are selected, you will be given further instructions for the next steps.</p>
-
-    <h2>Follow Us</h2>
-    <p>Stay connected with us on social media!</p>
-    <ul>
-        <li><a href="https://www.facebook.com/wanaonifoundation" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/wanaonimike" target="_blank">Instagram</a></li>
-        <li><a href="https://twitter.com/wanaonimike" target="_blank">X</a></li>
-        <li><a href="https://www.tiktok.com/@wanaonimike" target="_blank">TikTok</a></li>
-    </ul>
-
-    <h2>Testimonials</h2>
-    <div>
-        <p>"Wanaoni Foundation made my DV Lottery application process so much easier. Highly recommend!" - John Doe</p>
-        <p>"Excellent support and guidance throughout the application. Couldn't have done it without them!" - Jane Smith</p>
-    </div>
-
-    <!-- Chatbot integration -->
-    <iframe height="430" width="350" src="https://bot.dialogflow.com/991a8ca4-db4c-4375-ae4e-2404a02e4e11"></iframe>
+    <header>
+        <h1>DV Lottery Application</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Welcome to the DV Lottery Application Page</h2>
+            <p>The Diversity Visa (DV) Lottery, also known as the Green Card Lottery, is a United States government lottery program for receiving a United States Permanent Resident Card. Each year, the program makes 55,000 immigrant visas available to people from countries with low rates of immigration to the United States.</p>
+            <h2>Eligibility Requirements</h2>
+            <ul>
+                <li>Be a native of a qualifying country.</li>
+                <li>Meet the education/work experience requirements.</li>
+                <li>Submit an entry during the specified registration period.</li>
+            </ul>
+            <h2>How to Apply</h2>
+            <p>Follow these steps to apply for the DV Lottery:</p>
+            <ol>
+                <li>Check if you are eligible.</li>
+                <li>Complete the online application form.</li>
+                <li>Submit your application before the deadline.</li>
+                <li>Keep your confirmation number safe.</li>
+            </ol>
+            <h2>Important Dates</h2>
+            <p>The registration period for the DV Lottery typically opens in October and closes in November. Be sure to check the official website for the exact dates each year.</p>
+            <h2>Frequently Asked Questions</h2>
+            <h3>What is the DV Lottery?</h3>
+            <p>The DV Lottery is a program that makes 55,000 immigrant visas available annually to people from countries with low rates of immigration to the United States.</p>
+            <h3>How do I know if I am eligible?</h3>
+            <p>Eligibility is based on your country of birth and meeting certain education or work experience requirements. Check the official DV Lottery website for detailed eligibility criteria.</p>
+            <h3>How can I apply?</h3>
+            <p>You can apply online during the registration period. Make sure to fill out the application form accurately and submit it before the deadline.</p>
+            <h3>What happens after I apply?</h3>
+            <p>After submitting your application, you will receive a confirmation number. Keep this number safe as you will need it to check the status of your application.</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 DV Lottery Application. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
