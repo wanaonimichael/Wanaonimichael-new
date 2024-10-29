@@ -1,3 +1,42 @@
+<style>
+    @keyframes colorChange {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: yellow; }
+        100% { color: red; }
+    }
+
+    .moving-text {
+        display: inline-block;
+        animation: move 5s linear infinite, colorChange 5s linear infinite;
+    }
+
+    @keyframes move {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(100px); }
+        100% { transform: translateX(0); }
+    }
+</style>
+
+<p class="moving-text">Welcome to Wanaoni Foundation!</p>
+<div id="cookieBanner" style="position: fixed; bottom: 0; width: 100%; background-color: #333; color: white; text-align: center; padding: 10px; display: none;">
+    This website uses cookies to ensure you get the best experience on our website.
+    <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">Accept</button>
+</div>
+
+<script>
+    function acceptCookies() {
+        document.cookie = "accepted=true; max-age=" + 60 * 60 * 24 * 30; // 30 days
+        document.getElementById("cookieBanner").style.display = "none";
+    }
+
+    window.onload = function() {
+        if (!document.cookie.split('; ').find(row => row.startsWith('accepted='))) {
+            document.getElementById("cookieBanner").style.display = "block";
+        }
+    }
+</script>
 <header class="App-header">
     <img src="https://yourimageurl.com/hero.jpg" alt="Hero Image" style="width:100%;">
     <h1>Welcome to Wanaoni Foundation</h1>
